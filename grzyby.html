@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Czas na Grzyby!</title>
+    <link rel="stylesheet" href="grzyby.css">
+  </head>
+  <body>
+
+      <div class="container">
+        <div class="navbar">
+          <h2>Czas na grzyby!</h2>
+        </div>
+
+
+        <div class="menu">
+          <ul>
+            <li>1. pieczarka dwuzarodnikowa (pieczarka)</li>
+            <li>2. czubajka kania (kania)</li>
+            <li>3. borowik szlachetny (prawdziwek)</li>
+            <li>4. xerocomus (podgrzybek)</li>
+            <li>5. pieprznik jadalny (kurka)</li>
+            <li>6. pleurotus (boczniak)</li>
+            <li>7. trufla letnia (trufla)</li>
+          </ul>
+      </div>
+
+        <div class="gallery">
+          <img src="pieczarka.jpg" alt="pieczarka">
+          <img src="kania.jpg" alt="kania">
+          <img src="prawdziwek.jpg" alt="prawdziwek">
+          <img src="podgrzybek.jpg" alt="podgrzybek">
+          <img src="kurka.jpg" alt="kurka">
+          <img src="boczniak.jpg" alt="boczniak">
+          <img src="trufla.jpg" alt="trufla">
+        </div>
+
+        <div class="footer">
+          <h2>Autor: Jakub Wrzeszcz</h2>
+        </div>
+      </div>
+
+      <script>
+        function gallery(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+      </script>
+
+  </body>
+</html>
